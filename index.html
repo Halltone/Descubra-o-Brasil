@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <title>Descubra o Brasil</title>
+</head>
+
+<body>
+  <header>
+    <img src="https://www.pnguniverse.com/wp-content/uploads/2021/01/Mapa-de-Brasil-1280x1290.png" alt="" class="logo">
+    <h1 class="titulo">Descubra o Brasil</h1>
+  </header>
+  <main>
+    <div class="contenedor">
+      <input type="text" id="searchInput" placeholder="Digite o nome da Ciudade">
+      <button id="searchButton">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div id="suggestions" class="suggestions"></div>
+    </div>
+    
+    <div class="contenedor-imagenes">
+      <div class="carousel-container">
+        <button class="carousel-button prev">❮</button>
+        <div class="carousel">
+            <img src="https://a.cdn-hotels.com/gdcs/production143/d357/42fb6908-dcd5-4edb-9f8c-76208494af80.jpg" alt="" class="img" data-city="Rio de Janeiro">
+            <img src="https://referencia.com.br/wp-content/uploads/2020/08/AdobeStock_273669515-scaled.jpeg" alt="" class="img" data-city="São Paulo">
+            <img src="https://th.bing.com/th/id/OIP.UMulEjh4miSdD73BbDERHwHaE9?rs=1&pid=ImgDetMain" alt="" class="img" data-city="Foz do Iguaçu">
+            <img src="https://cdn.getyourguide.com/img/tour/5df28216f12f2.jpeg/145.jpg" alt="" class="img" data-city="Salvador">
+            <img src="https://matuete.com/wpmatuete/wp-content/uploads/2013/12/floripa02.jpg" alt="" class="img" data-city="Florianópolis">
+            <img src="https://cdn.generationvoyage.fr/2021/02/guide-brasilia.jpg" alt="" class="img" data-city="Brasília">
+            <img src="https://th.bing.com/th/id/R.e60d87ebe4d40a3d8c52dc97f4aa0209?rik=dEUMquiSVAoC2g&riu=http%3a%2f%2fwww.infoescola.com%2fwp-content%2fuploads%2f2009%2f01%2fouro-preto_560936134.jpg&ehk=e%2fxxsa0IVMOLZkmO2uqwJQBuHe2xw%2fnvOwvAODUuhQo%3d&risl=&pid=ImgRaw&r=0" alt="" class="img" data-city="Ouro Preto">
+            <img src="https://i.pinimg.com/originals/61/c8/88/61c8883c9edfdb7cebfe3466fb4dbc80.jpg" alt="" class="img" data-city="Olinda">
+            <img src="https://miviaje.info/wp-content/uploads/2015/11/Bonito..jpg" alt="" class="img" data-city="Bonito">
+            <img src="https://a.cdn-hotels.com/gdcs/production100/d446/bd044843-4369-4cdf-b064-229d806cce64.jpg" alt="" class="img" data-city="Manaus">          
+            <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-gramado-capa2019-04-820x430.jpg" alt="" class="img" data-city="Gramado">
+            <img src="https://revistasagarana.com.br/wp-content/uploads/2011/10/revistasagarana-fernandodenoronha-fotosjeanyvesdonnardnoronha-2009-a-591.jpg" alt="" class="img" data-city="Fernando de Noronha">
+            <img src="https://conteudo.imguol.com.br/c/entretenimento/61/2019/01/01/cidade-de-paraty-no-rio-de-janeiro-1546365760139_v2_1920x1281.jpg" alt="" class="img" data-city="Paraty">
+            <img src="https://static-otelico.com/cache/preabeach/Jericoacoara.jpg" alt="" class="img" data-city="Jericoacoara">
+            <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/264000/264640-Buzios-And-Vicinity.jpg" alt="" class="img" data-city="Búzios">
+            <img src="https://www.viagenscinematograficas.com.br/wp-content/uploads/2021/04/Ubatuba-O-que-Fazer-Praias-Capa-3.jpg" alt="" class="img" data-city="Ubatuba">
+            <img src="https://ateondeeupuderir.com/wp-content/uploads/2022/08/Roteiro-de-Alter-do-Chao.jpg" alt="" class="img" data-city="Alter do Chão">
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/10/48/55/63.jpg" alt="" class="img" data-city="São Luís">
+            <img src="https://s2-g1.glbimg.com/N8997rS1GSIPvUMhqnpxO6U1eNg=/0x0:620x465/984x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2015/12/31/cuiaba_vista_aerea_620x465_gcom.jpg" alt="" class="img" data-city="Cuiabá">
+            <img src="https://media.istockphoto.com/id/498689790/pt/foto/canto-praia-da-vit%C3%B3ria-esp%C3%ADrito-santo-brasil.jpg?s=612x612&w=0&k=20&c=vLEpz9HvY15pAUxLwTVwiwE6noNpTPk4hPrNkS0cVwo=" alt="" class="img" data-city="Vitória">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6vriBNzY_POFFJWAetFqJ5-SpdU1TyYZVjA&s" alt="" class="img" data-city="Porto Alegre">
+            <img src="https://lavanderia60minutos.com.br/wp-content/uploads/2022/08/1.jpg" alt="" class="img" data-city="João Pessoa">
+            <img src="https://turismo.b-cdn.net/wp-content/uploads/2013/01/Fortaleza-a-capital-do-Ceara.webp" alt="" class="img" data-city="Fortaleza">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-c/1280x250/09/b7/18/75/praia-do-saco.jpg" alt="" class="img" data-city="Aracaju">
+
+        </div>
+        <button class="carousel-button next">❯</button>
+    </div>
+    
+    </div>
+
+    <section id="informacion">
+    </section>
+
+    <section class="imagem-galeria"></section>
+  </main>
+
+  <footer class="terminosdeuso"></footer>
+
+  <div class="icons">
+    <a href="" id="email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/halltone/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/Halltone" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </footer>
+
+  <script src="datos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
